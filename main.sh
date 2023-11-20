@@ -13,12 +13,13 @@ MAGENTA='\033[0;35m'
 RESET='\033[0m'
 
 ascii() {
-    echo -e "${RED}__________      .__                  __________              "
-    echo "\\______   \\__ __|  |   ______ ____   \\______   \\ _______  ___"
-    echo " |     ___/  |  \\  |  /  ___// __ \\   |    |  _//  _ \\  \\/  /"
-    echo " |    |   |  |  /  |__\\___ \\\\  ___/   |    |   (  <_> >    < "
-    echo " |____|   |____/|____/____  >\\___  >  |______  /\\____/__/>_ \\"
-    echo
+    echo -e "${YELLOW}__________           __                             .___             ________  ________  ________${RESET}"
+    echo -e "${YELLOW}\______   \ ___.__._/  |_   ____   ____   ____    __| _/ ____       /  _____/ /  _____/ /  _____/${RESET}"
+    echo -e "${YELLOW} |    |  _/<   |  |\   __\_/ __ \_/ ___\ /  _ \  / __ |_/ __ \     /   __  \ /   __  \ /   __  \ ${RESET}"
+    echo -e "${YELLOW} |    |   \ \___  | |  |  \  ___/\  \___(  <_> )/ /_/ |\  ___/     \  |__\  \\  |__\  \\  |__\  \ ${RESET}"
+    echo -e "${YELLOW} |______  / / ____| |__|   \___  >\___  >\____/ \____ | \___  >     \_____  / \_____  / \_____  /${RESET}"
+    echo -e "${YELLOW}        \/  \/                 \/     \/             \/     \/            \/        \/        \/${RESET}"
+    echo 
     echo -e "${YELLOW}[1] IP Info${RESET}"
     echo -e "${MAGENTA}[2] EMAIL OSINT NEEDS TO BE FINISHED${RESET}"
     echo -e "${MAGENTA}[3] USERNAME OSINT NOTDONE${RESET}"
@@ -26,6 +27,8 @@ ascii() {
     echo -e "${RED}[0] Exit${RESET}"
     echo 
 }
+
+
 
 IpInf() {
     echo "Enter the IP address:"
